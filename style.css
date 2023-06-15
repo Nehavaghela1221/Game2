@@ -1,0 +1,73 @@
+*{
+    margin :0;
+    padding :0;
+}
+body{
+    background-color: darkred;
+    overflow: hidden;
+}
+.gameContainer{
+  
+    background-image: url(v.png);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+
+    height:100vh;
+    width: 100wh;
+}
+.gost{
+    background-image: url(k-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-size: covers;
+    width: 233px;
+    height: 240px;
+    position: absolute;
+    bottom: 0;
+    left: 60px;
+}
+.obstacle{
+  
+    width: 300px;
+    height: 190px;
+
+    background-image: url(s.png.png);
+    background-size: covers;
+    background-repeat: no-repeat;
+    bottom: 0;
+    position: absolute;
+    left:40vw;
+
+
+}
+
+.animategost{
+    animation:gost 0.6s linear;
+}
+.obstacleAni{
+    animation: obstacleAni 5s linear infinite;
+}
+.gameOver{
+    visibility: hidden;
+}
+@keyframes gost {
+    0%{
+        bottom: 0;
+    }
+    50%
+    {
+        bottom: 422px;
+    }
+    100%{
+        bottom: 0;
+        
+    }
+}
+
+@keyframes obstacleAni {
+    0%{
+        left:100vw;
+    }
+    100%{
+        left:-10vw;
+    }
+}
